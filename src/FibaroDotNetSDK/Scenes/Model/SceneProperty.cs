@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FibaroDotNetSDK.Model.Scenes
+namespace FibaroDotNetSDK.Scenes.Model
 {
     public partial class SceneProperty
     {

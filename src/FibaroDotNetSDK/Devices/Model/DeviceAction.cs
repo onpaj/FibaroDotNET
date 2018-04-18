@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FibaroDotNetSDK.Model.Device
+namespace FibaroDotNetSDK.Devices.Model
 {
     public partial class DeviceAction
     {

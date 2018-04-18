@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FibaroDotNetSDK.Model.Room
+namespace FibaroDotNetSDK.Rooms.Model
 {
     public partial class DefaultSensors
     {

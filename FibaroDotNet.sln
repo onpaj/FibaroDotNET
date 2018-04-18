@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3DEC1AF2-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibaroDotNetSDK", "src\FibaroDotNetSDK\FibaroDotNetSDK.csproj", "{A536C1C9-30D9-4E70-B615-0411BE3313F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibaroDotNet.Tests", "test\FibaroDotNet.Tests\FibaroDotNet.Tests.csproj", "{91C80C7A-603D-4C73-B77E-1F5EA702A729}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{A536C1C9-30D9-4E70-B615-0411BE3313F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A536C1C9-30D9-4E70-B615-0411BE3313F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A536C1C9-30D9-4E70-B615-0411BE3313F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C80C7A-603D-4C73-B77E-1F5EA702A729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C80C7A-603D-4C73-B77E-1F5EA702A729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C80C7A-603D-4C73-B77E-1F5EA702A729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C80C7A-603D-4C73-B77E-1F5EA702A729}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A536C1C9-30D9-4E70-B615-0411BE3313F9} = {621401EE-5F3D-4116-9DB8-4FE14D742D7C}
+		{91C80C7A-603D-4C73-B77E-1F5EA702A729} = {3DEC1AF2-261E-44CB-9A9E-7C7BF982AAA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63BE81D9-BD4E-4B4E-991A-780486167740}

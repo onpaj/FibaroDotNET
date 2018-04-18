@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FibaroDotNetSDK.Model.Weather
+namespace FibaroDotNetSDK.Weather.Model
 {
     public partial class Weather
     {
