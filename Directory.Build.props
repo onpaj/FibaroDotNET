@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <VersionPrefix>0.1.0</VersionPrefix>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Rem</Authors>
+    <Copyright>(c) Rem</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <VersionSuffix Condition="'$(VersionSuffix)'!=''">$(VersionSuffix)</VersionSuffix>
+  </PropertyGroup>
+</Project>

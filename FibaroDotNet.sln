@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3DEC1AF2-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibaroDotNetSDK", "src\FibaroDotNetSDK\FibaroDotNetSDK.csproj", "{A536C1C9-30D9-4E70-B615-0411BE3313F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibaroDotNet.Tests", "test\FibaroDotNet.Tests\FibaroDotNet.Tests.csproj", "{91C80C7A-603D-4C73-B77E-1F5EA702A729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibaroDotNet.Tests", "test\FibaroDotNet.Tests\FibaroDotNet.Tests.csproj", "{91C80C7A-603D-4C73-B77E-1F5EA702A729}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7D576E5-D3EF-4B6C-B1C9-5445685613CC}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
