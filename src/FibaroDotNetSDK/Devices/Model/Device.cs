@@ -39,10 +39,10 @@ namespace FibaroDotNetSDK.Devices.Model
         public List<string> Interfaces { get; set; }
 
         [JsonProperty("properties")]
-        public DeviceProperty Properties { get; set; }
+        public DeviceProperties Properties { get; set; }
 
-        [JsonProperty("actions")]
-        public DeviceAction Actions { get; set; }
+        //[JsonProperty("actions")]
+        //public string[] Actions { get; set; }
 
         [JsonProperty("created")]
         public long Created { get; set; }

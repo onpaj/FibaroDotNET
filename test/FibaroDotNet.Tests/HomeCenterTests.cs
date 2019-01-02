@@ -19,7 +19,7 @@ namespace FibaroDotNet.Tests
             var settings = TestHelper.GetSettings();
 
 
-            var client = new HomeCenterFibaroClient(settings);
+            var client = new FibaroClient(settings);
 
             var gw = new DeviceGateway(client);
             var entities = await gw.GetDevices();
@@ -33,7 +33,7 @@ namespace FibaroDotNet.Tests
             var settings = TestHelper.GetSettings();
 
 
-            var client = new HomeCenterFibaroClient(settings);
+            var client = new FibaroClient(settings);
 
             var gw = new RoomGateway(client);
             var entities = await gw.GetRooms();
@@ -47,7 +47,7 @@ namespace FibaroDotNet.Tests
             var settings = TestHelper.GetSettings();
 
 
-            var client = new HomeCenterFibaroClient(settings);
+            var client = new FibaroClient(settings);
 
             var gw = new SceneGateway(client);
             var entities = await gw.GetScenes();
@@ -61,7 +61,7 @@ namespace FibaroDotNet.Tests
             var settings = TestHelper.GetSettings();
 
 
-            var client = new HomeCenterFibaroClient(settings);
+            var client = new FibaroClient(settings);
 
             var gw = new WeatherGateway(client);
             var entities = await gw.GetWeather();

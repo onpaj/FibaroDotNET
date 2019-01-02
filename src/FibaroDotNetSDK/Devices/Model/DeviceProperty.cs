@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace FibaroDotNetSDK.Devices.Model
 {
-    public partial class DeviceProperty
+    public partial class DeviceProperties
     {
         [JsonProperty("parameters")]
         public List<DeviceParameter> Parameters { get; set; }

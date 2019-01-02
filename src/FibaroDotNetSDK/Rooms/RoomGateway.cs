@@ -8,9 +8,9 @@ namespace FibaroDotNetSDK.Rooms
 {
     public class RoomGateway : IRoomGateway
     {
-        private readonly HomeCenterFibaroClient _client;
+        private readonly IFibaroClient _client;
 
-        public RoomGateway(HomeCenterFibaroClient client)
+        public RoomGateway(IFibaroClient client)
         {
             _client = client;
         }

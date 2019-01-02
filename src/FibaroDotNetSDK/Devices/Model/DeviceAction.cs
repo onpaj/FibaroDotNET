@@ -1,34 +1,18 @@
-﻿using Newtonsoft.Json;
+﻿using System.Linq;
+using Newtonsoft.Json;
 
 namespace FibaroDotNetSDK.Devices.Model
 {
-    public partial class DeviceAction
+    public struct DeviceAction
     {
-        [JsonProperty("abortUpdate")]
-        public long AbortUpdate { get; set; }
+        public DeviceAction(string name, params object[] args)
+        {
+            Name = name;
+            Args = args.Select(s => s.ToString()).ToArray();
+        }
 
-        [JsonProperty("forceArm")]
-        public long ForceArm { get; set; }
+        public string Name { get; }
 
-        [JsonProperty("meetArmConditions")]
-        public long MeetArmConditions { get; set; }
-
-        [JsonProperty("reconfigure")]
-        public long Reconfigure { get; set; }
-
-        [JsonProperty("retryUpdate")]
-        public long RetryUpdate { get; set; }
-
-        [JsonProperty("setArmed")]
-        public long SetArmed { get; set; }
-
-        [JsonProperty("setInterval")]
-        public long SetInterval { get; set; }
-
-        [JsonProperty("startUpdate")]
-        public long StartUpdate { get; set; }
-
-        [JsonProperty("updateFirmware")]
-        public long UpdateFirmware { get; set; }
+        public string[] Args { get; }
     }
 }
