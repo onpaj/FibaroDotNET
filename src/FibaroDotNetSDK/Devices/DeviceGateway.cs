@@ -21,12 +21,6 @@ namespace FibaroDotNetSDK.Devices
             return _client.SendRequest<ICollection<Device>>(request);
         }
 
-        public async Task<Device> GetDevice(long id)
-        {
-            var devices = await GetDevices();
-            return devices.SingleOrDefault(s => s.Id == id);
-        }
-
         public Task Call(long id, DeviceAction action)
         {
             var request = new CallDeviceActionRequest(id, action);

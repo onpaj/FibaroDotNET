@@ -9,8 +9,6 @@ namespace FibaroDotNetSDK.Devices
     {
         Task<ICollection<Device>> GetDevices();
 
-        Task<Device> GetDevice(long id);
-
         Task Call(long id, DeviceAction action);
     }
 }
