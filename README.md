@@ -12,14 +12,14 @@ var settings = new HubSettings()
 var client = new FibaroClient(settings);
 
 var deviceGw = new DeviceGateway(client);
-var devices = await gw.GetDevices();
+var devices = await deviceGw.GetDevices();
 
 var roomGw = new RoomGateway(client);
-var room = await gw.GetRooms();
+var room = await roomGw.GetRooms();
 
 var sceneGw = new SceneGateway(client);
-var scenes = await gw.GetScenes();
+var scenes = await sceneGw.GetScenes();
 
 var weatherGw = new WeatherGateway(client);
-var weather = await gw.GetWeather();
+var weather = await weatherGw.GetWeather();
 ```
