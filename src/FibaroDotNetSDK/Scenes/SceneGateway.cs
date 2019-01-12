@@ -9,9 +9,9 @@ namespace FibaroDotNetSDK.Scenes
 {
     public class SceneGateway : ISceneGateway
     {
-        private readonly FibaroClient _client;
+        private readonly IFibaroClient _client;
 
-        public SceneGateway(FibaroClient client)
+        public SceneGateway(IFibaroClient client)
         {
             _client = client;
         }

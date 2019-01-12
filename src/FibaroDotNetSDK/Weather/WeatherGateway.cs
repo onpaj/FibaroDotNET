@@ -6,9 +6,9 @@ namespace FibaroDotNetSDK.Weather
 {
     public class WeatherGateway : IWeatherGateway
     {
-        private readonly FibaroClient _client;
+        private readonly IFibaroClient _client;
 
-        public WeatherGateway(FibaroClient client)
+        public WeatherGateway(IFibaroClient client)
         {
             _client = client;
         }
