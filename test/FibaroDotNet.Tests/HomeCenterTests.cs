@@ -28,6 +28,20 @@ namespace FibaroDotNet.Tests
         }
 
         [Fact]
+        public async Task GetDeviceById()
+        {
+            var settings = TestHelper.GetSettings();
+
+
+            var client = new FibaroClient(settings);
+
+            var gw = new DeviceGateway(client);
+            var entities = await gw.GetDeviceById(1);
+
+            Assert.NotNull(entities);
+        }
+
+        [Fact]
         public async Task GetRooms()
         {
             var settings = TestHelper.GetSettings();
